@@ -26,30 +26,6 @@ build_metadata.AdditionalFiles.ManifestResourceName = ComparadorDePrecos.AppShel
 build_metadata.AdditionalFiles.TargetPath = AppShell.xaml
 build_metadata.AdditionalFiles.RelativePath = AppShell.xaml
 
-[D:/Users/breno/Workspace/ComparadorDePrecos/CapacidadePage.xaml]
-build_metadata.AdditionalFiles.GenKind = Xaml
-build_metadata.AdditionalFiles.ManifestResourceName = ComparadorDePrecos.CapacidadePage.xaml
-build_metadata.AdditionalFiles.TargetPath = CapacidadePage.xaml
-build_metadata.AdditionalFiles.RelativePath = CapacidadePage.xaml
-
-[D:/Users/breno/Workspace/ComparadorDePrecos/ComprimentoPage.xaml]
-build_metadata.AdditionalFiles.GenKind = Xaml
-build_metadata.AdditionalFiles.ManifestResourceName = ComparadorDePrecos.ComprimentoPage.xaml
-build_metadata.AdditionalFiles.TargetPath = ComprimentoPage.xaml
-build_metadata.AdditionalFiles.RelativePath = ComprimentoPage.xaml
-
-[D:/Users/breno/Workspace/ComparadorDePrecos/MainPage.xaml]
-build_metadata.AdditionalFiles.GenKind = Xaml
-build_metadata.AdditionalFiles.ManifestResourceName = ComparadorDePrecos.MainPage.xaml
-build_metadata.AdditionalFiles.TargetPath = MainPage.xaml
-build_metadata.AdditionalFiles.RelativePath = MainPage.xaml
-
-[D:/Users/breno/Workspace/ComparadorDePrecos/MassaPage.xaml]
-build_metadata.AdditionalFiles.GenKind = Xaml
-build_metadata.AdditionalFiles.ManifestResourceName = ComparadorDePrecos.MassaPage.xaml
-build_metadata.AdditionalFiles.TargetPath = MassaPage.xaml
-build_metadata.AdditionalFiles.RelativePath = MassaPage.xaml
-
 [D:/Users/breno/Workspace/ComparadorDePrecos/Resources/Styles/Colors.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = ComparadorDePrecos.Resources.Styles.Colors.xaml
@@ -62,20 +38,32 @@ build_metadata.AdditionalFiles.ManifestResourceName = ComparadorDePrecos.Resourc
 build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Styles.xaml
 build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Styles.xaml
 
-[D:/Users/breno/Workspace/ComparadorDePrecos/TempoPage.xaml]
+[D:/Users/breno/Workspace/ComparadorDePrecos/Views/CapacidadePage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
-build_metadata.AdditionalFiles.ManifestResourceName = ComparadorDePrecos.TempoPage.xaml
-build_metadata.AdditionalFiles.TargetPath = TempoPage.xaml
-build_metadata.AdditionalFiles.RelativePath = TempoPage.xaml
+build_metadata.AdditionalFiles.ManifestResourceName = ComparadorDePrecos.Views.CapacidadePage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\CapacidadePage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\CapacidadePage.xaml
 
-[D:/Users/breno/Workspace/ComparadorDePrecos/UnidadePage.xaml]
+[D:/Users/breno/Workspace/ComparadorDePrecos/Views/ComprimentoPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
-build_metadata.AdditionalFiles.ManifestResourceName = ComparadorDePrecos.UnidadePage.xaml
-build_metadata.AdditionalFiles.TargetPath = UnidadePage.xaml
-build_metadata.AdditionalFiles.RelativePath = UnidadePage.xaml
+build_metadata.AdditionalFiles.ManifestResourceName = ComparadorDePrecos.Views.ComprimentoPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\ComprimentoPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\ComprimentoPage.xaml
 
-[D:/Users/breno/Workspace/ComparadorDePrecos/VolumePage.xaml]
+[D:/Users/breno/Workspace/ComparadorDePrecos/Views/MainPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
-build_metadata.AdditionalFiles.ManifestResourceName = ComparadorDePrecos.VolumePage.xaml
-build_metadata.AdditionalFiles.TargetPath = VolumePage.xaml
-build_metadata.AdditionalFiles.RelativePath = VolumePage.xaml
+build_metadata.AdditionalFiles.ManifestResourceName = ComparadorDePrecos.Views.MainPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\MainPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\MainPage.xaml
+
+[D:/Users/breno/Workspace/ComparadorDePrecos/Views/MassaPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = ComparadorDePrecos.Views.MassaPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\MassaPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\MassaPage.xaml
+
+[D:/Users/breno/Workspace/ComparadorDePrecos/Views/UnidadePage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = ComparadorDePrecos.Views.UnidadePage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\UnidadePage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\UnidadePage.xaml

@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ComparadorDePrecos.Views.MainPage">
+    
+    <StackLayout
+                Spacing="10"
+                Padding="10,10,0,0"
+                VerticalOptions="FillAndExpand">
+        
+        <StackLayout Spacing="20"
+                         Orientation="Vertical" VerticalOptions="StartAndExpand">
+
+            <Label
+                Text="Comparador de Preços"
+                FontSize="22"
+                HorizontalOptions="Center" 
+                VerticalOptions="Center"
+                />
+
+            <Image
+                        VerticalOptions="Center"
+                        Source="calc.png"
+                        HeightRequest="100"
+                        Aspect="AspectFit"
+                            />
+            <Label Text="Calcule rápidamente a diferença entre preços de um mesmo item com diferentes proporções, selecione uma das opções no menu para iniciar."
+                FontSize="16"
+                HorizontalOptions="CenterAndExpand" 
+                VerticalOptions="End"/>
+                
+
+    </StackLayout>
+    
+
+    <StackLayout Spacing="0" Orientation="Vertical" VerticalOptions="End">
+
+            <Label HorizontalOptions="Center" FontSize="10" Text="Desenvolvido por:" />
+            <Image
+                    Source="logo.png"
+                    HeightRequest="35"
+                    HorizontalOptions="Center" />
+            <Button Text="Saiba mais..." Clicked="Sobre_Clicked" Margin="5" WidthRequest="120"/>
+        </StackLayout>
+    </StackLayout>
+</ContentPage>

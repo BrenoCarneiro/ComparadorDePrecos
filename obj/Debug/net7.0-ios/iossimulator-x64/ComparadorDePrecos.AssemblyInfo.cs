@@ -19,7 +19,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyTitleAttribute("ComparadorDePrecos")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
 [assembly: System.Runtime.Versioning.TargetPlatformAttribute("iOS16.1")]
-[assembly: System.Runtime.Versioning.SupportedOSPlatformAttribute("iOS11.0")]
+[assembly: System.Runtime.Versioning.SupportedOSPlatformAttribute("iOS16.1")]
 
 // Gerado pela classe WriteCodeFragment do MSBuild.
 

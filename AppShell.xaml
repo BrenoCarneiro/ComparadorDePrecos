@@ -3,38 +3,30 @@
     x:Class="ComparadorDePrecos.AppShell"
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-    xmlns:local="clr-namespace:ComparadorDePrecos"
+    xmlns:views="clr-namespace:ComparadorDePrecos.Views"
     Shell.FlyoutBehavior="Disabled">
 
     <TabBar>
         <ShellContent
             Title="Home"
-            ContentTemplate="{DataTemplate local:MainPage}"
+            ContentTemplate="{DataTemplate views:MainPage}"
             Icon="{OnPlatform 'home.png'}" />
         <ShellContent
             Title="Unidade"
-            ContentTemplate="{DataTemplate local:UnidadePage}"
+            ContentTemplate="{DataTemplate views:UnidadePage}"
             Icon="{OnPlatform 'grid.png'}" />
         <ShellContent
             Title="Capacidade"
-            ContentTemplate="{DataTemplate local:CapacidadePage}"
+            ContentTemplate="{DataTemplate views:CapacidadePage}"
             Icon="{OnPlatform 'capacidade.png'}" />
         <ShellContent
             Title="Massa"
-            ContentTemplate="{DataTemplate local:MassaPage}"
+            ContentTemplate="{DataTemplate views:MassaPage}"
             Icon="{OnPlatform 'dashboard.png'}" />
         <ShellContent
-            Title="Tempo"
-            ContentTemplate="{DataTemplate local:TempoPage}"
-            Icon="{OnPlatform 'tempo.png'}" />
-        <ShellContent
             Title="Comprimento"
-            ContentTemplate="{DataTemplate local:ComprimentoPage}"
+            ContentTemplate="{DataTemplate views:ComprimentoPage}"
             Icon="{OnPlatform 'comprimento.png'}" />
-        <ShellContent
-            Title="Volume"
-            ContentTemplate="{DataTemplate local:VolumePage}"
-            Icon="{OnPlatform 'cube.png'}" />
     </TabBar>
 
 </Shell>

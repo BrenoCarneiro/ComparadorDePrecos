@@ -1,9 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "NuO6vexyO7KgCAXdq/6Ji4CqIEJHAxLJbuQPiQm/oL0aXFoT2aUfan6OYJKQMI+YTjIa0kbFf3lGoRb5lpj4+A==",
+  "dgSpecHash": "w1kqjU/FFV1fVbH255lgbSAD9WK6WvOxk08v5BtPQXj0dDcl/f0tcwwGoZYkMvRMb2p1MVWoGVN8sOwgotxEhw==",
   "success": true,
   "projectFilePath": "D:\\Users\\breno\\Workspace\\ComparadorDePrecos\\ComparadorDePrecos.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\breno\\.nuget\\packages\\communitytoolkit.maui\\3.1.0\\communitytoolkit.maui.3.1.0.nupkg.sha512",
+    "C:\\Users\\breno\\.nuget\\packages\\communitytoolkit.maui.core\\3.1.0\\communitytoolkit.maui.core.3.1.0.nupkg.sha512",
     "C:\\Users\\breno\\.nuget\\packages\\googlegson\\2.9.1.1\\googlegson.2.9.1.1.nupkg.sha512",
     "C:\\Users\\breno\\.nuget\\packages\\microsoft.extensions.configuration\\7.0.0\\microsoft.extensions.configuration.7.0.0.nupkg.sha512",
     "C:\\Users\\breno\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\7.0.0\\microsoft.extensions.configuration.abstractions.7.0.0.nupkg.sha512",

@@ -3,7 +3,7 @@
   <PropertyGroup>
     <IsFirstTimeProjectOpen>False</IsFirstTimeProjectOpen>
     <ActiveDebugFramework>net7.0-android</ActiveDebugFramework>
-    <ActiveDebugProfile>Samsung SM-M315F (Android 12.0 – API 31)</ActiveDebugProfile>
+    <ActiveDebugProfile>Motorola moto g(6) plus (Android 9.0 – API 28)</ActiveDebugProfile>
     <SelectedPlatformGroup>PhysicalDevice</SelectedPlatformGroup>
     <DefaultDevice>pixel_5_-_api_30</DefaultDevice>
   </PropertyGroup>
@@ -15,22 +15,16 @@
     <PlatformTarget>x64</PlatformTarget>
   </PropertyGroup>
   <ItemGroup>
-    <MauiXaml Update="CapacidadePage.xaml">
+    <MauiXaml Update="Views\CapacidadePage.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
-    <MauiXaml Update="ComprimentoPage.xaml">
+    <MauiXaml Update="Views\ComprimentoPage.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
-    <MauiXaml Update="MassaPage.xaml">
+    <MauiXaml Update="Views\MassaPage.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
-    <MauiXaml Update="TempoPage.xaml">
-      <SubType>Designer</SubType>
-    </MauiXaml>
-    <MauiXaml Update="UnidadePage.xaml">
-      <SubType>Designer</SubType>
-    </MauiXaml>
-    <MauiXaml Update="VolumePage.xaml">
+    <MauiXaml Update="Views\UnidadePage.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
   </ItemGroup>

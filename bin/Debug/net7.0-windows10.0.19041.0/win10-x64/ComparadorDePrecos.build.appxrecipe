@@ -604,6 +604,12 @@
     <AppxPackagedFile Include="C:\Users\breno\.nuget\packages\microsoft.windows.sdk.net.ref\10.0.19041.28\lib\net6.0\WinRT.Runtime.dll">
       <PackagePath>WinRT.Runtime.dll</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\breno\.nuget\packages\communitytoolkit.maui\3.1.0\lib\net7.0-windows10.0.19041\CommunityToolkit.Maui.dll">
+      <PackagePath>CommunityToolkit.Maui.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\breno\.nuget\packages\communitytoolkit.maui.core\3.1.0\lib\net7.0-windows10.0.19041\CommunityToolkit.Maui.Core.dll">
+      <PackagePath>CommunityToolkit.Maui.Core.dll</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\breno\.nuget\packages\microsoft.extensions.configuration\7.0.0\lib\net7.0\Microsoft.Extensions.Configuration.dll">
       <PackagePath>Microsoft.Extensions.Configuration.dll</PackagePath>
     </AppxPackagedFile>
@@ -862,137 +868,44 @@
     <AppxPackagedFile Include="D:\Users\breno\Workspace\ComparadorDePrecos\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-400.png">
       <PackagePath>appiconWideTile.scale-400.png</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Users\breno\Workspace\ComparadorDePrecos\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\calc.scale-100.png">
+      <PackagePath>calc.scale-100.png</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Users\breno\Workspace\ComparadorDePrecos\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\capacidade.scale-100.png">
       <PackagePath>capacidade.scale-100.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Users\breno\Workspace\ComparadorDePrecos\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\capacidade.scale-125.png">
-      <PackagePath>capacidade.scale-125.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Users\breno\Workspace\ComparadorDePrecos\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\capacidade.scale-150.png">
-      <PackagePath>capacidade.scale-150.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Users\breno\Workspace\ComparadorDePrecos\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\capacidade.scale-200.png">
-      <PackagePath>capacidade.scale-200.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Users\breno\Workspace\ComparadorDePrecos\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\capacidade.scale-400.png">
-      <PackagePath>capacidade.scale-400.png</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Users\breno\Workspace\ComparadorDePrecos\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\comprimento.scale-100.png">
       <PackagePath>comprimento.scale-100.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Users\breno\Workspace\ComparadorDePrecos\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\comprimento.scale-125.png">
-      <PackagePath>comprimento.scale-125.png</PackagePath>
+    <AppxPackagedFile Include="D:\Users\breno\Workspace\ComparadorDePrecos\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\cross.scale-100.png">
+      <PackagePath>cross.scale-100.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Users\breno\Workspace\ComparadorDePrecos\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\comprimento.scale-150.png">
-      <PackagePath>comprimento.scale-150.png</PackagePath>
+    <AppxPackagedFile Include="D:\Users\breno\Workspace\ComparadorDePrecos\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\cross_small.scale-100.png">
+      <PackagePath>cross_small.scale-100.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Users\breno\Workspace\ComparadorDePrecos\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\comprimento.scale-200.png">
-      <PackagePath>comprimento.scale-200.png</PackagePath>
+    <AppxPackagedFile Include="D:\Users\breno\Workspace\ComparadorDePrecos\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\cross_small_grey.scale-100.png">
+      <PackagePath>cross_small_grey.scale-100.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Users\breno\Workspace\ComparadorDePrecos\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\comprimento.scale-400.png">
-      <PackagePath>comprimento.scale-400.png</PackagePath>
+    <AppxPackagedFile Include="D:\Users\breno\Workspace\ComparadorDePrecos\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\cross_small_white.scale-100.png">
+      <PackagePath>cross_small_white.scale-100.png</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Users\breno\Workspace\ComparadorDePrecos\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\cube.scale-100.png">
       <PackagePath>cube.scale-100.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Users\breno\Workspace\ComparadorDePrecos\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\cube.scale-125.png">
-      <PackagePath>cube.scale-125.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Users\breno\Workspace\ComparadorDePrecos\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\cube.scale-150.png">
-      <PackagePath>cube.scale-150.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Users\breno\Workspace\ComparadorDePrecos\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\cube.scale-200.png">
-      <PackagePath>cube.scale-200.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Users\breno\Workspace\ComparadorDePrecos\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\cube.scale-400.png">
-      <PackagePath>cube.scale-400.png</PackagePath>
-    </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Users\breno\Workspace\ComparadorDePrecos\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\dashboard.scale-100.png">
       <PackagePath>dashboard.scale-100.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Users\breno\Workspace\ComparadorDePrecos\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\dashboard.scale-125.png">
-      <PackagePath>dashboard.scale-125.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Users\breno\Workspace\ComparadorDePrecos\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\dashboard.scale-150.png">
-      <PackagePath>dashboard.scale-150.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Users\breno\Workspace\ComparadorDePrecos\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\dashboard.scale-200.png">
-      <PackagePath>dashboard.scale-200.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Users\breno\Workspace\ComparadorDePrecos\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\dashboard.scale-400.png">
-      <PackagePath>dashboard.scale-400.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Users\breno\Workspace\ComparadorDePrecos\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-100.png">
-      <PackagePath>dotnet_bot.scale-100.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Users\breno\Workspace\ComparadorDePrecos\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-125.png">
-      <PackagePath>dotnet_bot.scale-125.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Users\breno\Workspace\ComparadorDePrecos\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-150.png">
-      <PackagePath>dotnet_bot.scale-150.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Users\breno\Workspace\ComparadorDePrecos\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-200.png">
-      <PackagePath>dotnet_bot.scale-200.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Users\breno\Workspace\ComparadorDePrecos\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-400.png">
-      <PackagePath>dotnet_bot.scale-400.png</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Users\breno\Workspace\ComparadorDePrecos\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\grid.scale-100.png">
       <PackagePath>grid.scale-100.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Users\breno\Workspace\ComparadorDePrecos\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\grid.scale-125.png">
-      <PackagePath>grid.scale-125.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Users\breno\Workspace\ComparadorDePrecos\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\grid.scale-150.png">
-      <PackagePath>grid.scale-150.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Users\breno\Workspace\ComparadorDePrecos\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\grid.scale-200.png">
-      <PackagePath>grid.scale-200.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Users\breno\Workspace\ComparadorDePrecos\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\grid.scale-400.png">
-      <PackagePath>grid.scale-400.png</PackagePath>
-    </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Users\breno\Workspace\ComparadorDePrecos\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\home.scale-100.png">
       <PackagePath>home.scale-100.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Users\breno\Workspace\ComparadorDePrecos\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\home.scale-125.png">
-      <PackagePath>home.scale-125.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Users\breno\Workspace\ComparadorDePrecos\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\home.scale-150.png">
-      <PackagePath>home.scale-150.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Users\breno\Workspace\ComparadorDePrecos\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\home.scale-200.png">
-      <PackagePath>home.scale-200.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Users\breno\Workspace\ComparadorDePrecos\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\home.scale-400.png">
-      <PackagePath>home.scale-400.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Users\breno\Workspace\ComparadorDePrecos\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\icon_about.scale-100.png">
-      <PackagePath>icon_about.scale-100.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Users\breno\Workspace\ComparadorDePrecos\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\icon_about_ios.scale-100.png">
-      <PackagePath>icon_about_ios.scale-100.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Users\breno\Workspace\ComparadorDePrecos\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\icon_notes.scale-100.png">
-      <PackagePath>icon_notes.scale-100.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Users\breno\Workspace\ComparadorDePrecos\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\icon_notes_ios.scale-100.png">
-      <PackagePath>icon_notes_ios.scale-100.png</PackagePath>
+    <AppxPackagedFile Include="D:\Users\breno\Workspace\ComparadorDePrecos\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\logo.scale-100.png">
+      <PackagePath>logo.scale-100.png</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Users\breno\Workspace\ComparadorDePrecos\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\tempo.scale-100.png">
       <PackagePath>tempo.scale-100.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Users\breno\Workspace\ComparadorDePrecos\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\tempo.scale-125.png">
-      <PackagePath>tempo.scale-125.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Users\breno\Workspace\ComparadorDePrecos\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\tempo.scale-150.png">
-      <PackagePath>tempo.scale-150.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Users\breno\Workspace\ComparadorDePrecos\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\tempo.scale-200.png">
-      <PackagePath>tempo.scale-200.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Users\breno\Workspace\ComparadorDePrecos\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\tempo.scale-400.png">
-      <PackagePath>tempo.scale-400.png</PackagePath>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

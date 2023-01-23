@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
+             x:Class="ComparadorDePrecos.Views.ComprimentoPage"
+             x:Name="comprimentoPage"
+             Title="ComprimentoPage">
+    <ContentPage.Resources>
+        <Style x:Key="InvalidEntryStyle" TargetType="Entry">
+            <Setter Property="TextColor" Value="Red" />
+        </Style>
+    </ContentPage.Resources>
+
+    <StackLayout Spacing="25" Padding="30,0" VerticalOptions="FillAndExpand">
+
+        <StackLayout Orientation="Vertical" VerticalOptions="StartAndExpand">
+
+            <ListView ItemsSource="{Binding ListaComprimento, Source={x:Reference comprimentoPage}}"
+                      SeparatorColor="Transparent"
+                      SelectionMode="None"
+                      HasUnevenRows="True"
+                      >
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <Grid ColumnSpacing="10">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*"/>
+                                </Grid.ColumnDefinitions>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="AUTO"/>
+                                    <RowDefinition Height="*"/>
+                                </Grid.RowDefinitions>
+                                <VerticalStackLayout Margin="0,12,0,0">
+                                    <Label Grid.Column="0" HorizontalOptions="StartAndExpand" VerticalOptions="Start" FontSize="16">
+                                        <Label.Text>
+                                            <MultiBinding StringFormat="{}● Item {0} - Quantidade total: {1} {2}">
+                                                <Binding Path="Posicao" />
+                                                <Binding Path="Quantidade" />
+                                                <Binding Path="UnidadeDeMedida" />
+                                            </MultiBinding>
+                                        </Label.Text>
+                                    </Label>
+                                    <Label Margin="15,0,0,0" Grid.Column="0" VerticalOptions="Center" FontSize="16">
+                                        <Label.Text>
+                                            <MultiBinding StringFormat="{}Valor de cada {0}: {1:C4}">
+                                                <Binding Path="UnidadeDeMedida" />
+                                                <Binding Path="ValorUnitario" />
+                                            </MultiBinding>
+                                        </Label.Text>
+                                    </Label>
+                                    <ProgressBar Progress="{Binding Progresso}" PropertyChanged="ProgressBar_PropertyChanged"  Grid.Column="0" VerticalOptions="End" HorizontalOptions="FillAndExpand"/>
+
+                                </VerticalStackLayout>
+
+                                <Button Grid.Column="3" Text="X" FontSize="20" Clicked="RemoverItem" HorizontalOptions="End" VerticalOptions="Center" Padding="0" MaximumHeightRequest="28" MaximumWidthRequest="28"/>
+
+                            </Grid>
+
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+
+        </StackLayout>
+        
+        <StackLayout Spacing="8" Orientation="Vertical" VerticalOptions="End">
+            
+            <Picker x:Name="picker"
+                    Title="Selecione a medida:" 
+                   HorizontalOptions="FillAndExpand">
+                <Picker.ItemsSource>
+                    <x:Array Type="{x:Type x:String}">
+                        <x:String>CM</x:String>
+                        <x:String>M</x:String>
+                    </x:Array>
+                </Picker.ItemsSource>
+            </Picker>
+            <Label HorizontalOptions="Start" FontSize="14" Text="Quantidade total de itens:" VerticalOptions="Start" />
+            <Entry x:Name="quantidadeDeItens" VerticalOptions="StartAndExpand" Placeholder="1" Keyboard="Numeric" ClearButtonVisibility="WhileEditing" ReturnType="Next">
+                <Entry.Behaviors>
+                    <toolkit:NumericValidationBehavior 
+                        InvalidStyle="{StaticResource InvalidEntryStyle}"
+                Flags="ValidateOnValueChanged"
+                MinimumValue="1"/>
+                </Entry.Behaviors>
+            </Entry>
+            <Label HorizontalOptions="Start" FontSize="14" Text="Tamanho do item:" VerticalOptions="Start" />
+            <Entry x:Name="quantidade" VerticalOptions="StartAndExpand" Placeholder="Tamanho de cada item" Keyboard="Numeric" ClearButtonVisibility="WhileEditing" ReturnType="Next">
+                <Entry.Behaviors>
+                    <toolkit:NumericValidationBehavior 
+                        InvalidStyle="{StaticResource InvalidEntryStyle}"
+
+                Flags="ValidateOnValueChanged"
+                MinimumValue="1"/>
+                </Entry.Behaviors>
+            </Entry>
+            <Label HorizontalOptions="Start" FontSize="14" Text="Valor total:" VerticalOptions="CenterAndExpand"/>
+            <Entry x:Name="valor" VerticalOptions="CenterAndExpand" Placeholder="Valor total dos itens" Keyboard="Numeric" ClearButtonVisibility="WhileEditing" ReturnType="Done">
+                <Entry.Behaviors>
+                    <toolkit:NumericValidationBehavior 
+                        InvalidStyle="{StaticResource InvalidEntryStyle}"
+                Flags="ValidateOnValueChanged"
+                MinimumValue="1"/>
+
+                </Entry.Behaviors>
+            </Entry>
+            <Button Text="Adicionar item" Clicked="AdicionarItem" VerticalOptions="End"/>
+        </StackLayout>
+    </StackLayout>
+</ContentPage>
