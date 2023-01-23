@@ -1,1 +1,0 @@
-D:\Users\breno\Workspace\ComparadorDePrecos\ComparadorDePrecos.csproj;x64

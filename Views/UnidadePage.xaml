@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
              x:Class="ComparadorDePrecos.Views.UnidadePage"
              Title="Comparar por Unidade"
              x:Name="unidadePage">
 
-    <StackLayout Spacing="25" Padding="30,0" VerticalOptions="FillAndExpand">
-        <StackLayout Spacing="10" Margin="5" Orientation="Vertical" VerticalOptions="StartAndExpand">
+    <StackLayout Spacing="25" Padding="30,0" VerticalOptions="StartAndExpand">
+        <StackLayout Spacing="10" Margin="5" Orientation="Vertical" VerticalOptions="CenterAndExpand">
 
             <ListView ItemsSource="{Binding ListaUnidade, Source={x:Reference unidadePage}}"
                       SeparatorColor="Silver"
@@ -48,9 +49,9 @@
 
         <StackLayout Spacing="8" Orientation="Vertical" VerticalOptions="End">
             <Label HorizontalOptions="Start" FontSize="14" Text="Quantidade:" VerticalOptions="Start" />
-            <Entry x:Name="quantidade" VerticalOptions="StartAndExpand" Placeholder="Quantidade total do item" Keyboard="Numeric" ClearButtonVisibility="WhileEditing" ReturnType="Next" Completed="quantidade_Completed"/>
+            <Entry x:Name="quantidade" VerticalOptions="StartAndExpand" Placeholder="Quantidade total do item" Keyboard="Numeric" ClearButtonVisibility="WhileEditing" ReturnType="Next" toolkit:SetFocusOnEntryCompletedBehavior.NextElement="{x:Reference valor}"/>
             <Label HorizontalOptions="Start" FontSize="14" Text="Valor total:" VerticalOptions="CenterAndExpand"/>
-            <Entry x:Name="valor" VerticalOptions="CenterAndExpand" Placeholder="Valor total do item" Keyboard="Numeric" ClearButtonVisibility="WhileEditing" ReturnType="Done"/>
+            <Entry x:Name="valor" VerticalOptions="CenterAndExpand" Placeholder="Valor total do item" Keyboard="Numeric" ClearButtonVisibility="WhileEditing" ReturnType="Done" Completed="AdicionarItem"/>
             <Button Text="Adicionar item" Clicked="AdicionarItem" VerticalOptions="End"/>
         </StackLayout>
     </StackLayout>

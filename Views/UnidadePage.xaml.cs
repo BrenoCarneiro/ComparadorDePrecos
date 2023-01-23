@@ -109,5 +109,4 @@ public partial class UnidadePage : ContentPage
             progress.ProgressColor = Color.FromHex("3E8EED");
         }
     }
-
 }
