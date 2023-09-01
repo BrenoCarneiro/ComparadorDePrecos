@@ -50,7 +50,7 @@ public partial class UnidadePage : ContentPage
     public Command<Item> Remove { get => new Command<Item>((item) => ListaUnidade.Remove(item)); }
     public void AdicionarItem(object sender, EventArgs e)
     {
-        if (quantidade.Text != null && valor.Text != null)
+        if (quantidade.Text != null && valor.Text != null && quantidade.Text != "" && valor.Text != "")
         {
             decimal quantidadeText = decimal.Parse(quantidade.Text, new NumberFormatInfo() { NumberDecimalSeparator = "." });
             decimal valorText = decimal.Parse(valor.Text, new NumberFormatInfo() { NumberDecimalSeparator = "." });

@@ -9,7 +9,7 @@
     ".NETCoreApp,Version=v7.0/win10-x64": {
       "ComparadorDePrecos/1.0": {
         "dependencies": {
-          "CommunityToolkit.Maui": "3.1.0",
+          "CommunityToolkit.Maui": "4.0.0",
           "Microsoft.Extensions.Configuration": "7.0.0",
           "Microsoft.Extensions.DependencyInjection": "7.0.0",
           "Microsoft.Extensions.Logging": "7.0.0",
@@ -793,9 +793,9 @@
           }
         }
       },
-      "CommunityToolkit.Maui/3.1.0": {
+      "CommunityToolkit.Maui/4.0.0": {
         "dependencies": {
-          "CommunityToolkit.Maui.Core": "3.1.0"
+          "CommunityToolkit.Maui.Core": "4.0.0"
         },
         "runtime": {
           "lib/net7.0-windows10.0.19041/CommunityToolkit.Maui.dll": {
@@ -804,7 +804,7 @@
           }
         }
       },
-      "CommunityToolkit.Maui.Core/3.1.0": {
+      "CommunityToolkit.Maui.Core/4.0.0": {
         "runtime": {
           "lib/net7.0-windows10.0.19041/CommunityToolkit.Maui.Core.dll": {
             "assemblyVersion": "1.0.0.0",
@@ -1048,19 +1048,19 @@
       "serviceable": false,
       "sha512": ""
     },
-    "CommunityToolkit.Maui/3.1.0": {
+    "CommunityToolkit.Maui/4.0.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-C5jJU9k+aqo05Bwv3yFLTv5FdWqOOL97qY/EmlRjPDzgWx9LOhZCLhJu+5eiNITuhGkSGEFrK1lt/yxAimkInA==",
-      "path": "communitytoolkit.maui/3.1.0",
-      "hashPath": "communitytoolkit.maui.3.1.0.nupkg.sha512"
+      "sha512": "sha512-76XJVmDRXoKooARQK7tuwvjAnOwF39nmNoRhHGU1cpElJuKZ4v5Y1QlkSJjxaNaubY4JyplZiDPXK60dsEoPRg==",
+      "path": "communitytoolkit.maui/4.0.0",
+      "hashPath": "communitytoolkit.maui.4.0.0.nupkg.sha512"
     },
-    "CommunityToolkit.Maui.Core/3.1.0": {
+    "CommunityToolkit.Maui.Core/4.0.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-tSPn+ix6wemEx/jwleS4sVlrLrck3C9zILeiquPxAXNlCFGIZ0Pn74vGXaSdXblbrAA7WuJeHIbQX0rp22k6Bg==",
-      "path": "communitytoolkit.maui.core/3.1.0",
-      "hashPath": "communitytoolkit.maui.core.3.1.0.nupkg.sha512"
+      "sha512": "sha512-UBlKxyJisLvbZJvi9o125erFl1bMDSBDvkfgdUFiCt6nTVLA+c3y22LMz1poY7s+zmE2A5iphmqT1SWnkTNWAg==",
+      "path": "communitytoolkit.maui.core/4.0.0",
+      "hashPath": "communitytoolkit.maui.core.4.0.0.nupkg.sha512"
     },
     "Microsoft.Extensions.Configuration/7.0.0": {
       "type": "package",

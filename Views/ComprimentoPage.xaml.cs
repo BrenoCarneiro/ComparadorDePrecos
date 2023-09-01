@@ -3,7 +3,6 @@ using CommunityToolkit.Maui.Alerts;
 using CommunityToolkit.Maui.Core;
 using System.Globalization;
 using ComparadorDePrecos.Models;
-using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace ComparadorDePrecos.Views;
 
@@ -64,7 +63,7 @@ public partial class ComprimentoPage : ContentPage
 
     public void AdicionarItem(object sender, EventArgs e)
     {
-        if (quantidade.Text != null && valor.Text != null && picker.SelectedIndex > -1)
+        if (quantidade.Text != null && valor.Text != null && picker.SelectedIndex > -1 && quantidade.Text != "" && valor.Text != "")
         {
             int quantidadeDeItensText = 1;
             if (quantidadeDeItens.Text != null && quantidadeDeItens.Text != "")

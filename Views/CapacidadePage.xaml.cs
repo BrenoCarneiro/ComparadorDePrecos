@@ -63,7 +63,7 @@ public partial class CapacidadePage : ContentPage
 
     public void AdicionarItem(object sender, EventArgs e)
     {
-        if(quantidade.Text != null && valor.Text != null && picker.SelectedIndex > -1) 
+        if(quantidade.Text != null && valor.Text != null && picker.SelectedIndex > -1 && quantidade.Text != "" && valor.Text != "") 
         {
             decimal quantidadeText = decimal.Parse(quantidade.Text, new NumberFormatInfo() { NumberDecimalSeparator = "." });
             decimal valorText = decimal.Parse(valor.Text, new NumberFormatInfo() { NumberDecimalSeparator = "." });

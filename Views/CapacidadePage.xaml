@@ -4,7 +4,7 @@
              xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
              x:Class="ComparadorDePrecos.Views.CapacidadePage"
              x:Name="capacidadePage"
-             Title="Comparar por Capacidade">
+             Title="Comparar Capacidade">
     <ContentPage.Resources>
         <Style x:Key="InvalidEntryStyle" TargetType="Entry">
             <Setter Property="TextColor" Value="Red" />
@@ -13,7 +13,7 @@
 
     <StackLayout Spacing="25" Padding="30,0" VerticalOptions="FillAndExpand">
         
-        <StackLayout Orientation="Vertical" VerticalOptions="StartAndExpand">
+        <StackLayout Orientation="Vertical" VerticalOptions="CenterAndExpand">
 
             <ListView ItemsSource="{Binding ListaCapacidade, Source={x:Reference capacidadePage}}"
                       SeparatorColor="Transparent"
@@ -76,17 +76,13 @@
                 </Picker.ItemsSource>
             </Picker>
             <Label HorizontalOptions="Start" FontSize="14" Text="Quantidade:" VerticalOptions="Start" />
-            <Entry x:Name="quantidade" VerticalOptions="StartAndExpand" Placeholder="Quantidade total do item" Keyboard="Numeric" ClearButtonVisibility="WhileEditing" ReturnType="Next">
+            <Entry x:Name="quantidade" VerticalOptions="StartAndExpand" Placeholder="Quantidade total do item" Keyboard="Numeric" ClearButtonVisibility="WhileEditing" ReturnType="Next" toolkit:SetFocusOnEntryCompletedBehavior.NextElement="{x:Reference valor}">
                 <Entry.Behaviors>
-                    <toolkit:NumericValidationBehavior 
-                        InvalidStyle="{StaticResource InvalidEntryStyle}"
-
-                Flags="ValidateOnValueChanged"
-                MinimumValue="1"/>
+                    <toolkit:NumericValidationBehavior InvalidStyle="{StaticResource InvalidEntryStyle}" Flags="ValidateOnValueChanged" MinimumValue="1"/>
                 </Entry.Behaviors>
             </Entry>
             <Label HorizontalOptions="Start" FontSize="14" Text="Valor total:" VerticalOptions="CenterAndExpand"/>
-            <Entry x:Name="valor" VerticalOptions="CenterAndExpand" Placeholder="Valor total do item" Keyboard="Numeric" ClearButtonVisibility="WhileEditing" ReturnType="Done">
+            <Entry x:Name="valor" VerticalOptions="CenterAndExpand" Placeholder="Valor total do item" Keyboard="Numeric" ClearButtonVisibility="WhileEditing" ReturnType="Done" Completed="AdicionarItem" toolkit:SetFocusOnEntryCompletedBehavior.NextElement="{x:Reference quantidade}">
                 <Entry.Behaviors>
                     <toolkit:NumericValidationBehavior 
                         InvalidStyle="{StaticResource InvalidEntryStyle}"
