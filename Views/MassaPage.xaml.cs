@@ -12,7 +12,7 @@ public partial class MassaPage : ContentPage
 	public MassaPage()
 	{
         InitializeComponent();
-        ListaMassa = new ObservableCollection<Item>();
+        ListaMassa = [];
     }
 
     private ObservableCollection<Item> _listaMassa;
@@ -26,7 +26,7 @@ public partial class MassaPage : ContentPage
         }
     }
 
-    public Command<Item> Remove { get => new Command<Item>((item) => ListaMassa.Remove(item)); }
+    public Command<Item> Remove { get => new((item) => ListaMassa.Remove(item)); }
     public void AtualizarUnidadeDeMedida()
     {
         if (ListaMassa.Count > 1)
@@ -35,9 +35,9 @@ public partial class MassaPage : ContentPage
             {
                 foreach (Item item in ListaMassa.Where(x => x.UnidadeDeMedida == "G"))
                 {
-                    item.Quantidade = item.Quantidade / 1000;
+                    item.Quantidade /= 1000;
                     item.UnidadeDeMedida = "KG";
-                    item.ValorUnitario = item.ValorUnitario * 1000;
+                    item.ValorUnitario *= 1000;
                 }
             }
         }
@@ -80,7 +80,7 @@ public partial class MassaPage : ContentPage
         }
         else
         {
-            CancellationTokenSource cancellationTokenSource = new CancellationTokenSource();
+            CancellationTokenSource cancellationTokenSource = new();
             var toast = Toast.Make("Preencha os campos corretamente!", ToastDuration.Short, 20);
             toast.Show(cancellationTokenSource.Token);
         }

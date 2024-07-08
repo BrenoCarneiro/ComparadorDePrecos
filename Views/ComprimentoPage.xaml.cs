@@ -11,7 +11,7 @@ public partial class ComprimentoPage : ContentPage
 	public ComprimentoPage()
 	{
 		InitializeComponent();
-        ListaComprimento = new ObservableCollection<Item>();
+        ListaComprimento = [];
     }
 
     private ObservableCollection<Item> _listaComprimento;
@@ -25,7 +25,7 @@ public partial class ComprimentoPage : ContentPage
         }
     }
 
-    public Command<Item> Remove { get => new Command<Item>((item) => ListaComprimento.Remove(item)); }
+    public Command<Item> Remove { get => new((item) => ListaComprimento.Remove(item)); }
     public void AtualizarUnidadeDeMedida()
     {
         if (ListaComprimento.Count > 1)
@@ -34,9 +34,9 @@ public partial class ComprimentoPage : ContentPage
             {
                 foreach (Item item in ListaComprimento.Where(x => x.UnidadeDeMedida == "CM"))
                 {
-                    item.Quantidade = item.Quantidade / 100;
+                    item.Quantidade /= 100;
                     item.UnidadeDeMedida = "M";
-                    item.ValorUnitario = item.ValorUnitario * 100;
+                    item.ValorUnitario *= 100;
                 }
             }
         }
@@ -85,7 +85,7 @@ public partial class ComprimentoPage : ContentPage
         }
         else
         {
-            CancellationTokenSource cancellationTokenSource = new CancellationTokenSource();
+            CancellationTokenSource cancellationTokenSource = new();
             var toast = Toast.Make("Preencha os campos corretamente!", ToastDuration.Short, 20);
             toast.Show(cancellationTokenSource.Token);
         }

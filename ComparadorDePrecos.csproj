@@ -1,8 +1,8 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
 	<PropertyGroup>
-		<TargetFrameworks>net7.0-android</TargetFrameworks>
-		<TargetFrameworks Condition="$([MSBuild]::IsOSPlatform('windows'))">$(TargetFrameworks);net7.0-windows10.0.19041.0</TargetFrameworks>
+		<TargetFrameworks>net8.0-android</TargetFrameworks>
+		<TargetFrameworks Condition="$([MSBuild]::IsOSPlatform('windows'))">$(TargetFrameworks);net8.0-windows10.0.19041.0</TargetFrameworks>
 		<OutputType>Exe</OutputType>
 		<RootNamespace>ComparadorDePrecos</RootNamespace>
 		<UseMaui>true</UseMaui>
@@ -17,7 +17,7 @@
 		<ApplicationIdGuid>b541d6ef-e1c8-4e27-93ee-db8c3e59501e</ApplicationIdGuid>
 
 		<!-- Versions -->
-		<ApplicationDisplayVersion>1.0</ApplicationDisplayVersion>
+		<ApplicationDisplayVersion>1.1</ApplicationDisplayVersion>
 		<ApplicationVersion>1</ApplicationVersion>
 
 		<!-- SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'ios'">11.0</SupportedOSPlatformVersion -->
@@ -44,8 +44,8 @@
 	</ItemGroup>
 
 	<ItemGroup>
-		<PackageReference Include="CommunityToolkit.Maui" Version="4.0.0" />
-		<PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="7.0.0" />
+		<PackageReference Include="CommunityToolkit.Maui" Version="9.0.2" />
+		<PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="8.0.0" />
 	
 	</ItemGroup>
 
@@ -64,5 +64,11 @@
 	  </MauiXaml>
 	</ItemGroup>
 	<ProjectExtensions><VisualStudio><UserProperties XamarinHotReloadDebuggerTimeoutExceptionComparadorDePrecosHideInfoBar="True" XamarinHotReloadUnhandledDeviceExceptionComparadorDePrecosHideInfoBar="True" /></VisualStudio></ProjectExtensions>
+	<ItemGroup>
+	  <PackageReference Update="Microsoft.Maui.Controls" Version="8.0.61" />
+	</ItemGroup>
+	<ItemGroup>
+	  <PackageReference Update="Microsoft.Maui.Controls.Compatibility" Version="8.0.61" />
+	</ItemGroup>
 
 </Project>

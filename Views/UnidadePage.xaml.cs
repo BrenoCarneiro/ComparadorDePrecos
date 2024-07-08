@@ -12,7 +12,7 @@ public partial class UnidadePage : ContentPage
     public UnidadePage()
     {
         InitializeComponent();
-        ListaUnidade = new ObservableCollection<Item>();
+        ListaUnidade = [];
     }
 
     private ObservableCollection<Item> _listaUnidade;
@@ -47,7 +47,7 @@ public partial class UnidadePage : ContentPage
     }
     
 
-    public Command<Item> Remove { get => new Command<Item>((item) => ListaUnidade.Remove(item)); }
+    public Command<Item> Remove { get => new((item) => ListaUnidade.Remove(item)); }
     public void AdicionarItem(object sender, EventArgs e)
     {
         if (quantidade.Text != null && valor.Text != null && quantidade.Text != "" && valor.Text != "")
@@ -63,7 +63,7 @@ public partial class UnidadePage : ContentPage
         }
         else
         {
-            CancellationTokenSource cancellationTokenSource = new CancellationTokenSource();
+            CancellationTokenSource cancellationTokenSource = new();
             var toast = Toast.Make("Preencha os campos corretamente!", ToastDuration.Short, 20);
             toast.Show(cancellationTokenSource.Token);
         }   

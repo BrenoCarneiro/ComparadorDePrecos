@@ -8,10 +8,7 @@ namespace ComparadorDePrecos.Models
         public event PropertyChangedEventHandler PropertyChanged;
         public void RaisedOnPropertyChanged(string _PropertyName)
         {
-            if (PropertyChanged != null)
-            {
-                PropertyChanged(this, new PropertyChangedEventArgs(_PropertyName));
-            }
+            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(_PropertyName));
         }
 
 

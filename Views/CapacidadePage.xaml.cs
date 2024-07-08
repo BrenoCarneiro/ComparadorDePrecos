@@ -11,7 +11,7 @@ public partial class CapacidadePage : ContentPage
 	public CapacidadePage()
 	{
 		InitializeComponent();
-        ListaCapacidade = new ObservableCollection<Item>();
+        ListaCapacidade = [];
     }
 
     private ObservableCollection<Item> _listaCapacidade;
@@ -25,7 +25,7 @@ public partial class CapacidadePage : ContentPage
         }
     }
 
-    public Command<Item> Remove { get => new Command<Item>((item) => ListaCapacidade.Remove(item)); }
+    public Command<Item> Remove { get => new((item) => ListaCapacidade.Remove(item)); }
     public void AtualizarUnidadeDeMedida()
     {
         if (ListaCapacidade.Count > 1)
@@ -34,9 +34,9 @@ public partial class CapacidadePage : ContentPage
             {
                 foreach (Item item in ListaCapacidade.Where(x => x.UnidadeDeMedida == "ML"))
                 {
-                    item.Quantidade = item.Quantidade / 1000;
+                    item.Quantidade /= 1000;
                     item.UnidadeDeMedida = "L";
-                    item.ValorUnitario = item.ValorUnitario * 1000;
+                    item.ValorUnitario *= 1000;
                 }
             }
         }
@@ -79,7 +79,7 @@ public partial class CapacidadePage : ContentPage
         }
         else
         {
-            CancellationTokenSource cancellationTokenSource = new CancellationTokenSource();
+            CancellationTokenSource cancellationTokenSource = new();
             var toast = Toast.Make("Preencha os campos corretamente!", ToastDuration.Short, 20);
             toast.Show(cancellationTokenSource.Token);
         }     
